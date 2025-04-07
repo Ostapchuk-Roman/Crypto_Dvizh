@@ -1,0 +1,46 @@
+@use "../utils/variables" as *;
+.hero-section {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    padding-top: 45px;
+    font-size: 20px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+
+  &__title {
+    position: relative;
+    padding-top: 17px;
+    text-align: center;
+    font-family: "Bebas-Neue";
+    font-size: 170px;
+    font-weight: 400;
+    line-height: 100%;
+    color: $title-color;
+    z-index: -2;
+
+    &--accent {
+      text-align: center;
+      font-family: "Bebas-Neue";
+      font-size: 100px;
+      line-height: 0.55;
+      color: $hero-color;
+    }
+  }
+
+  &__button-wrapper {
+    padding: 148px 0 92px;
+    text-align: center;
+  }
+  &__background {
+    position: relative;
+    top: -746px;
+    left: -5px;
+    z-index: -1;
+    transform: scale(1.1);
+  }
+}

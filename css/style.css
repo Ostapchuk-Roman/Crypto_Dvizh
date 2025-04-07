@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* Для коректної роботи rem */
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%; /* Відключення масштабування тексту в мобільних браузерах */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Або інший базовий шрифт */
+  background-color: #fff;
+  color: #000;
+}
+
+img,
+picture,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Bebas-Neue";
+  src: url("../../fonts/BebasNeue-Regular.woff2") format("woff2"), url("../../fonts/BebasNeue-Regular.woff") format("woff"), url("../../fonts/BebasNeue-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../../fonts/Montserrat-SemiBold.woff") format("woff"), url("../../fonts/Montserrat-SemiBold.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik-One";
+  src: url("../../fonts/RubikOne-Regular.woff2") format("woff2"), url("../../fonts/RubikOne-Regular.woff") format("woff"), url("../../fonts/RubikOne-Regular.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Rubik-One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #000000;
+}
+
+[class*=__container] {
+  max-width: 430px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  max-width: 147px;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.header__logo--accent {
+  color: #ffd700;
+}
+
+.hero-section__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section__info {
+  padding-top: 45px;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-section__title {
+  position: relative;
+  padding-top: 17px;
+  text-align: center;
+  font-family: "Bebas-Neue";
+  font-size: 170px;
+  font-weight: 400;
+  line-height: 100%;
+  color: #f6f6f6;
+  z-index: -2;
+}
+.hero-section__title--accent {
+  text-align: center;
+  font-family: "Bebas-Neue";
+  font-size: 100px;
+  line-height: 0.55;
+  color: #ffd700;
+}
+.hero-section__button-wrapper {
+  padding: 148px 0 92px;
+  text-align: center;
+}
+.hero-section__background {
+  position: relative;
+  top: -746px;
+  left: -5px;
+  z-index: -1;
+  transform: scale(1.1);
+}
+
+.button-tickets {
+  position: relative;
+  z-index: 5;
+  padding: 17px 54px;
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 100%;
+  color: #ffffff;
+  border: 1px solid #ffd700;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(89px);
+  -webkit-backdrop-filter: blur(89px);
+}/*# sourceMappingURL=style.css.map */

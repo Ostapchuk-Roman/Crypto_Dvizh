@@ -1,0 +1,16 @@
+@use "../utils/variables" as *;
+
+body {
+  font-family: "Rubik-One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: $primary-color;
+}
+
+[class*="__container"] {
+  max-width: 430px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+  //   background-color: $primary-color;
+}
