@@ -19,6 +19,16 @@
 }
 
 @font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Rubik-One";
   src: url("../fonts/RubikOne-Regular.woff2") format("woff2"),
     url("../fonts/RubikOne-Regular.woff") format("woff"),

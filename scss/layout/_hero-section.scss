@@ -1,15 +1,19 @@
 @use "../utils/variables" as *;
 .hero-section {
+  background-image: url(../../assets/images/background_photo-hero.png);
+  background-position: top center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
   }
   &__info {
-    padding-top: 45px;
+    padding-top: 65px;
     font-size: 20px;
     line-height: 100%;
     text-transform: uppercase;
-    color: $secondary-color;
   }
 
   &__title {
@@ -17,7 +21,7 @@
     padding-top: 17px;
     text-align: center;
     font-family: "Bebas-Neue";
-    font-size: 170px;
+    font-size: clamp(80px, 39.53vw, 170px);
     font-weight: 400;
     line-height: 100%;
     color: $title-color;
@@ -33,14 +37,14 @@
   }
 
   &__button-wrapper {
-    padding: 148px 0 92px;
+    padding: 148px 0 112px;
     text-align: center;
   }
   &__background {
-    position: relative;
-    top: -746px;
-    left: -5px;
+    width: 430px;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
-    transform: scale(1.1);
   }
 }

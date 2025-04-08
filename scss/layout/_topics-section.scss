@@ -1,0 +1,30 @@
+@use "../utils/variables" as *;
+
+.topics-section {
+  &__container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &__marquee {
+    display: flex;
+    width: max-content;
+    animation: marquee 10s linear infinite;
+  }
+
+  &__content {
+    flex: 0 0 auto;
+    padding: 0 10px;
+    text-transform: uppercase;
+    margin: 15px 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
