@@ -206,6 +206,7 @@ p {
   background-repeat: no-repeat;
 }
 .program-section__title {
+  margin: 0;
   padding: 20px 0 170px 20px;
   text-transform: uppercase;
   font-size: 30px;
@@ -315,7 +316,8 @@ p {
   }
 }
 
-.tooltip-wrapper:hover .tooltip-text {
+.tooltip-wrapper:hover .tooltip-text,
+.tooltip-wrapper:focus .tooltip-text {
   opacity: 1;
   visibility: visible;
 }/*# sourceMappingURL=style.css.map */

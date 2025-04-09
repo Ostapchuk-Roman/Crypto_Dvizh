@@ -73,7 +73,8 @@
   }
 }
 
-.tooltip-wrapper:hover .tooltip-text {
+.tooltip-wrapper:hover .tooltip-text,
+.tooltip-wrapper:focus .tooltip-text {
   opacity: 1;
   visibility: visible;
 }
