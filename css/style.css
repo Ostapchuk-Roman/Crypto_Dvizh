@@ -169,6 +169,18 @@ p {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
+.button-buy {
+  padding: 5px 28px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 100%;
+  color: #ffffff;
+  border: 1px solid #ffd700;
+  border-radius: 15px;
+  background-color: #000000;
+}
+
 .topics-section__container {
   overflow: hidden;
   width: 100%;
@@ -320,4 +332,61 @@ p {
 .tooltip-wrapper:focus .tooltip-text {
   opacity: 1;
   visibility: visible;
+}
+
+.buy-section__title h2 {
+  margin-bottom: 20px;
+}
+.buy-section__ticket-wrapper {
+  max-width: 330px;
+  margin: 0 auto;
+  border: 2px solid #ffd700;
+  border-bottom: 1px solid #ffd700;
+  border-radius: 10px;
+  box-shadow: 0 -4px 12px rgba(255, 215, 0, 0.25), -4px 0 12px rgba(255, 215, 0, 0.25), 4px 0 12px rgba(255, 215, 0, 0.25);
+}
+.buy-section__ticket-code {
+  background-color: #ffd700;
+  border-radius: 5px;
+}
+.buy-section__ticket-code img {
+  margin: auto;
+  padding: 12px 0;
+  max-width: 231px;
+}
+.buy-section__ticket-wrapper h3 {
+  margin: 10px 0;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+.buy-section__ticket-wrapper-bottom {
+  max-width: 330px;
+  margin: 0 auto 50px;
+  border: 2px solid #ffd700;
+  border-bottom: 1px solid #ffd700;
+  border-radius: 10px;
+  box-shadow: 4px 0 12px rgba(255, 215, 0, 0.25), -4px 0 12px rgba(255, 215, 0, 0.25), 0 4px 12px rgba(255, 215, 0, 0.25);
+  background-image: url(../assets/images/background_ticket.png);
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.buy-section__ticket-wrapper-bottom p {
+  max-width: 240px;
+  line-height: 100%;
+  font-family: "Montserrat";
+  margin: 20px 0 10px 20px;
+}
+.buy-section__ticket-wrapper-bottom h2 {
+  margin: 46px auto 0;
+  font-size: 48px;
+}
+.buy-section__ticket-wrapper-bottom span {
+  color: #ffd700;
+}
+.buy-section__button {
+  padding: 10px 0 40px 0;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

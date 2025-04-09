@@ -1,0 +1,71 @@
+@use "../utils/variables" as *;
+
+.buy-section {
+  &__title h2 {
+    margin-bottom: 20px;
+  }
+
+  &__ticket-wrapper {
+    max-width: 330px;
+    margin: 0 auto;
+    border: 2px solid $hero-color;
+    border-bottom: 1px solid $hero-color;
+    border-radius: 10px;
+    box-shadow: 0 -4px 12px rgba(255, 215, 0, 0.25),
+      -4px 0 12px rgba(255, 215, 0, 0.25), 4px 0 12px rgba(255, 215, 0, 0.25);
+  }
+
+  &__ticket-code {
+    background-color: $hero-color;
+    border-radius: 5px;
+  }
+
+  &__ticket-code img {
+    margin: auto;
+    padding: 12px 0;
+    max-width: 231px;
+  }
+
+  &__ticket-wrapper h3 {
+    margin: 10px 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $secondary-color;
+  }
+
+  &__ticket-wrapper-bottom {
+    max-width: 330px;
+    margin: 0 auto 50px;
+    border: 2px solid $hero-color;
+    border-bottom: 1px solid $hero-color;
+    border-radius: 10px;
+    box-shadow: 4px 0 12px rgba(255, 215, 0, 0.25),
+      -4px 0 12px rgba(255, 215, 0, 0.25), 0 4px 12px rgba(255, 215, 0, 0.25);
+    background-image: url(../assets/images/background_ticket.png);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__ticket-wrapper-bottom p {
+    max-width: 240px;
+    line-height: 100%;
+    font-family: "Montserrat";
+    margin: 20px 0 10px 20px;
+  }
+
+  &__ticket-wrapper-bottom h2 {
+    margin: 46px auto 0;
+    font-size: 48px;
+  }
+
+  &__ticket-wrapper-bottom span {
+    color: $hero-color;
+  }
+
+  &__button {
+    padding: 10px 0 40px 0;
+    text-align: center;
+  }
+}
