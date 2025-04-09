@@ -86,6 +86,14 @@ body {
   margin: 0 auto;
 }
 
+h2 {
+  margin: 50px 0 40px 0;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+}
+
 p {
   color: #ffffff;
 }
@@ -103,7 +111,7 @@ p {
 }
 
 .hero-section {
-  background-image: url(../../assets/images/background_photo-hero.png);
+  background-image: url(../assets/images/background_photo-hero.png);
   background-position: top center;
   background-size: auto;
   background-repeat: no-repeat;
@@ -192,7 +200,7 @@ p {
 .program-section__wrapper {
   height: 264px;
   border-radius: 10px;
-  background-image: url(../../assets/images/photo_people.jpg);
+  background-image: url(../assets/images/photo_people.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -201,6 +209,7 @@ p {
   padding: 20px 0 170px 20px;
   text-transform: uppercase;
   font-size: 30px;
+  text-align: left;
   color: #ffd700;
 }
 .program-section__text {
@@ -227,4 +236,86 @@ p {
 }
 .program-section__item {
   list-style-position: inside;
+}
+
+.speaker-section__person-wrapper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  justify-items: center;
+}
+.speaker-section__person-photo img {
+  width: 164px;
+  height: auto;
+  border: 2px solid #ffd700;
+  border-radius: 8px;
+}
+@media screen and (max-width: 380px) {
+  .speaker-section__person-photo img {
+    width: 134px;
+  }
+}
+.speaker-section__person-name h3 {
+  padding-top: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+@media screen and (max-width: 380px) {
+  .speaker-section__person-name h3 {
+    width: 134px;
+  }
+}
+
+.tooltip-wrapper {
+  position: absolute;
+}
+
+.tooltip-trigger {
+  position: relative;
+  top: 10px;
+  right: -134px;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
+  background-color: #ffd700;
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+}
+@media screen and (max-width: 380px) {
+  .tooltip-trigger {
+    right: -104px;
+  }
+}
+
+.tooltip-text {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 164px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 4px 4px;
+  border-radius: 4px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+@media screen and (max-width: 380px) {
+  .tooltip-text {
+    width: 134px;
+  }
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
