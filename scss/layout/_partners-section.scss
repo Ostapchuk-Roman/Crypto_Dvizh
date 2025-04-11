@@ -1,0 +1,51 @@
+@use "../utils/variables" as *;
+.partners-section {
+  &__title h2 {
+    margin-bottom: 10px;
+    font-size: 60px;
+
+    @media screen and (max-width: 380px) {
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: 340px) {
+      font-size: 40px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 30px;
+
+    @media screen and (max-width: 360px) {
+      gap: 10px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #3c3c3c;
+    border-radius: 10px;
+  }
+
+  &__logo {
+    max-width: 90px;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  &__title h3 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: $secondary-color;
+  }
+}

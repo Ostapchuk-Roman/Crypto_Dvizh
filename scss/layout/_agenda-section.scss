@@ -1,0 +1,15 @@
+@use "../utils/variables" as *;
+
+.agenda-section {
+  text-align: center;
+
+  &__title h2 {
+    font-size: 60px;
+    @media screen and (max-width: 380px) {
+      font-size: 50px;
+    }
+    @media screen and (max-width: 340px) {
+      font-size: 40px;
+    }
+  }
+}

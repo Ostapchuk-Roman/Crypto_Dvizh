@@ -52,23 +52,44 @@ a {
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat-Medium-Italic";
+  src: url("../../fonts/Montserrat-Medium-Italic.woff2") format("woff2"), url("../fonts/Montserrat-Medium-Italic.woff") format("woff"), url("../fonts/Montserrat-Medium-Italic.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Bold-Italic";
+  src: url("../../fonts/Montserrat-Bold-Italic.woff2") format("woff2"), url("../../fonts/Montserrat-Bold-Italic.woff") format("woff"), url("../../fonts/Montserrat-Bold-Italic.ttf") format("ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat-SemiBold";
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat-SemiBold.ttf") format("ttf");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Montserrat-Bold";
   src: url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("ttf");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik-One";
   src: url("../fonts/RubikOne-Regular.woff2") format("woff2"), url("../fonts/RubikOne-Regular.woff") format("woff"), url("../fonts/RubikOne-Regular.ttf") format("ttf");
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -158,7 +179,6 @@ p {
 
 .button-tickets {
   position: relative;
-  z-index: 5;
   padding: 17px 54px;
   text-transform: uppercase;
   font-size: 25px;
@@ -167,6 +187,12 @@ p {
   border: 1px solid #ffd700;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button-tickets:hover {
+  transform: scale(1.1); /* Збільшення на 10% при наведенні */
 }
 
 .button-buy {
@@ -227,7 +253,7 @@ p {
 }
 .program-section__text {
   margin-top: 20px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Medium";
   color: #000000;
 }
 .program-section__text--accent {
@@ -236,12 +262,12 @@ p {
   line-height: 0.8;
 }
 .program-section__text h3 {
-  font-weight: bold;
+  font-family: "Montserrat-Bold";
   font-size: 20px;
 }
 .program-section__text-bold {
+  font-family: "Montserrat-Bold";
   padding-bottom: 50px;
-  font-weight: bold;
   font-size: 16px;
 }
 .program-section__text p {
@@ -376,7 +402,7 @@ p {
 .buy-section__ticket-wrapper-bottom p {
   max-width: 240px;
   line-height: 100%;
-  font-family: "Montserrat";
+  font-family: "Montserrat-SemiBold";
   margin: 20px 0 10px 20px;
 }
 .buy-section__ticket-wrapper-bottom h2 {
@@ -389,4 +415,98 @@ p {
 .buy-section__button {
   padding: 10px 0 40px 0;
   text-align: center;
+}
+
+.agenda-section {
+  text-align: center;
+}
+.agenda-section__title h2 {
+  font-size: 60px;
+}
+@media screen and (max-width: 380px) {
+  .agenda-section__title h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .agenda-section__title h2 {
+    font-size: 40px;
+  }
+}
+
+.partners-section__title h2 {
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+@media screen and (max-width: 380px) {
+  .partners-section__title h2 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .partners-section__title h2 {
+    font-size: 40px;
+  }
+}
+.partners-section__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 360px) {
+  .partners-section__wrapper {
+    gap: 10px;
+  }
+}
+.partners-section__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #3c3c3c;
+  border-radius: 10px;
+}
+.partners-section__logo {
+  max-width: 90px;
+  height: auto;
+  border-radius: 10px;
+}
+.partners-section__title h3 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.footer {
+  margin-top: 100px;
+}
+.footer__container {
+  background-color: #ffd700;
+}
+.footer__title {
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-size: 21px;
+  line-height: 100%;
+}
+.footer__text {
+  width: 334px;
+  font-family: "Montserrat-Medium-Italic";
+  font-size: 12px;
+  line-height: 100%;
+  color: #000000;
+}
+.footer__text--accent {
+  font-family: "Montserrat-Bold-Italic";
+}
+.footer__message {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  padding-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

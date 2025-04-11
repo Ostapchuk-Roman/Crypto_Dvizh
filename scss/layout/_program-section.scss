@@ -26,7 +26,7 @@
 
   &__text {
     margin-top: 20px;
-    font-family: "Montserrat";
+    font-family: "Montserrat-Medium";
     color: $primary-color;
 
     &--accent {
@@ -37,13 +37,13 @@
   }
 
   &__text h3 {
-    font-weight: bold;
+    font-family: "Montserrat-Bold";
     font-size: 20px;
   }
 
   &__text-bold {
+    font-family: "Montserrat-Bold";
     padding-bottom: 50px;
-    font-weight: bold;
     font-size: 16px;
   }
 
