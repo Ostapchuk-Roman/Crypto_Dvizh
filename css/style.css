@@ -308,7 +308,7 @@ p {
 }
 @media screen and (max-width: 380px) {
   .speaker-section__person-photo img {
-    width: 134px;
+    width: 122px;
   }
 }
 .speaker-section__person-name h3 {
@@ -343,7 +343,7 @@ p {
 }
 @media screen and (max-width: 380px) {
   .tooltip-trigger {
-    right: -104px;
+    right: -90px;
   }
 }
 
@@ -357,7 +357,7 @@ p {
   color: #000000;
   padding: 4px 4px;
   border-radius: 4px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Medium";
   font-weight: 400;
   font-size: 12px;
   opacity: 0;
@@ -367,14 +367,8 @@ p {
 }
 @media screen and (max-width: 380px) {
   .tooltip-text {
-    width: 134px;
+    width: 122px;
   }
-}
-
-.tooltip-wrapper:hover .tooltip-text,
-.tooltip-wrapper:focus .tooltip-text {
-  opacity: 1;
-  visibility: visible;
 }
 
 .buy-section__title h2 {
@@ -472,7 +466,7 @@ p {
   place-items: center;
   gap: 30px;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   .partners-section__wrapper {
     gap: 10px;
   }
@@ -485,6 +479,12 @@ p {
   height: 100px;
   background-color: #3c3c3c;
   border-radius: 10px;
+}
+@media screen and (max-width: 380px) {
+  .partners-section__link {
+    width: 90px;
+    height: 90px;
+  }
 }
 .partners-section__logo {
   max-width: 90px;

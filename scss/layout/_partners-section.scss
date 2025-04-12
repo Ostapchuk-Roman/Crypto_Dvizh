@@ -19,7 +19,7 @@
     place-items: center;
     gap: 30px;
 
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 380px) {
       gap: 10px;
     }
   }
@@ -32,6 +32,10 @@
     height: 100px;
     background-color: #3c3c3c;
     border-radius: 10px;
+    @media screen and (max-width: 380px) {
+      width: 90px;
+      height: 90px;
+    }
   }
 
   &__logo {

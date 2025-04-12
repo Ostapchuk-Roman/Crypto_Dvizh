@@ -14,7 +14,7 @@
     border-radius: 8px;
 
     @media screen and (max-width: 380px) {
-      width: 134px;
+      width: 122px;
     }
   }
 
@@ -47,7 +47,7 @@
   cursor: pointer;
 
   @media screen and (max-width: 380px) {
-    right: -104px;
+    right: -90px;
   }
 }
 
@@ -61,7 +61,7 @@
   color: $primary-color;
   padding: 4px 4px;
   border-radius: 4px;
-  font-family: "Montserrat";
+  font-family: "Montserrat-Medium";
   font-weight: 400;
   font-size: 12px;
   opacity: 0;
@@ -69,12 +69,12 @@
   transition: opacity 0.3s ease;
   z-index: 1;
   @media screen and (max-width: 380px) {
-    width: 134px;
+    width: 122px;
   }
 }
 
-.tooltip-wrapper:hover .tooltip-text,
-.tooltip-wrapper:focus .tooltip-text {
-  opacity: 1;
-  visibility: visible;
-}
+// .tooltip-wrapper:hover .tooltip-text,
+// .tooltip-wrapper:focus .tooltip-text {
+//   opacity: 1;
+//   visibility: visible;
+// }
