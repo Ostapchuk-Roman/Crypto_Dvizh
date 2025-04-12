@@ -166,8 +166,9 @@ p {
   color: #ffd700;
 }
 .hero-section__button-wrapper {
+  display: flex;
+  justify-content: center;
   padding: 148px 0 112px;
-  text-align: center;
 }
 .hero-section__background {
   width: 430px;
@@ -178,8 +179,11 @@ p {
 }
 
 .button-tickets {
+  display: block;
+  width: 226px;
+  height: 65px;
   position: relative;
-  padding: 17px 54px;
+  padding: 20px 54px;
   text-transform: uppercase;
   font-size: 25px;
   line-height: 100%;
@@ -187,24 +191,37 @@ p {
   border: 1px solid #ffd700;
   border-radius: 12px;
   background-color: rgba(0, 0, 0, 0.75);
-  transition: all 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease;
 }
-
 .button-tickets:hover {
-  transform: scale(1.1); /* Збільшення на 10% при наведенні */
+  border: 2px solid #ffffff;
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+.button-tickets:active {
+  transform: scale(0.95);
 }
 
 .button-buy {
-  padding: 5px 28px;
-  text-align: center;
+  display: block;
+  width: 234px;
+  height: 60px;
+  padding: 0 28px;
   text-transform: uppercase;
   font-size: 40px;
-  line-height: 100%;
   color: #ffffff;
   border: 1px solid #ffd700;
   border-radius: 15px;
   background-color: #000000;
+  transition: transform 0.2s ease;
+}
+.button-buy:hover {
+  border: 2px solid #ffffff;
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+.button-buy:active {
+  transform: scale(0.95);
 }
 
 .topics-section__container {
@@ -413,8 +430,9 @@ p {
   color: #ffd700;
 }
 .buy-section__button {
+  display: flex;
+  justify-content: center;
   padding: 10px 0 40px 0;
-  text-align: center;
 }
 
 .agenda-section {

@@ -37,8 +37,9 @@
   }
 
   &__button-wrapper {
+    display: flex;
+    justify-content: center;
     padding: 148px 0 112px;
-    text-align: center;
   }
   &__background {
     width: 430px;
