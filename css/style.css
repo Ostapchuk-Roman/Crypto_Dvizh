@@ -87,15 +87,19 @@ a {
   font-display: swap;
 }
 @font-face {
-  font-family: "Rubik-One";
-  src: url("../fonts/RubikOne-Regular.woff2") format("woff2"), url("../fonts/RubikOne-Regular.woff") format("woff"), url("../fonts/RubikOne-Regular.ttf") format("ttf");
+  font-family: "Inter_28pt-Black";
+  src: url("../fonts/RubikOne-Regular.woff2") format("woff2"), url("../fonts/RubikOne-Regular.woff") format("woff"), url("../../fonts/Inter_28pt-Black.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "Rubik-One", sans-serif;
-  font-weight: 400;
+  font-family: "Inter_28pt-Black", sans-serif;
+  font-weight: 900;
   font-style: normal;
   background-color: #000000;
 }
@@ -112,7 +116,12 @@ h2 {
   text-transform: uppercase;
   font-size: 50px;
   text-align: center;
+  font-weight: 900;
   color: #ffffff;
+}
+
+h3 {
+  font-weight: 900;
 }
 
 p {
@@ -120,9 +129,9 @@ p {
 }
 
 .header__logo {
-  max-width: 147px;
+  max-width: 167px;
   font-size: 20px;
-  line-height: 100%;
+  line-height: 125%;
   text-transform: uppercase;
   margin: 0 auto;
   padding: 40px 0;
@@ -168,7 +177,7 @@ p {
 .hero-section__button-wrapper {
   display: flex;
   justify-content: center;
-  padding: 148px 0 112px;
+  padding: 120px 0 92px;
 }
 .hero-section__background {
   width: 430px;
@@ -180,8 +189,6 @@ p {
 
 .button-tickets {
   display: block;
-  width: 226px;
-  height: 65px;
   position: relative;
   padding: 20px 54px;
   text-transform: uppercase;
@@ -204,9 +211,7 @@ p {
 
 .button-buy {
   display: block;
-  width: 234px;
-  height: 60px;
-  padding: 0 28px;
+  padding: 5px 28px 8px;
   text-transform: uppercase;
   font-size: 40px;
   color: #ffffff;
@@ -262,6 +267,7 @@ p {
 }
 .program-section__title {
   margin: 0;
+  font-weight: 900;
   padding: 20px 0 170px 20px;
   text-transform: uppercase;
   font-size: 30px;
@@ -504,19 +510,20 @@ p {
   margin-top: 100px;
 }
 .footer__container {
+  padding-top: 6px;
   background-color: #ffd700;
 }
 .footer__title {
-  padding-top: 20px;
+  padding-top: 14px;
   text-transform: uppercase;
   font-size: 21px;
   line-height: 100%;
 }
 .footer__text {
-  width: 334px;
+  width: 90%;
   font-family: "Montserrat-Medium-Italic";
+  font-weight: 500;
   font-size: 12px;
-  line-height: 100%;
   color: #000000;
 }
 .footer__text--accent {

@@ -1,4 +1,4 @@
-document.querySelectorAll(".button-buy, .button-tickets").forEach((button) => {
+document.querySelectorAll(".button-buy").forEach((button) => {
   button.addEventListener("click", function (e) {
     e.preventDefault();
     const url = this.href;
